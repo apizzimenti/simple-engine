@@ -24,8 +24,8 @@ class Interpreter:
         try:
             with open(p.join(self.loc, "config.json"), "r") as f:
                 self.options = json.loads(f.read())
-        except:
-            raise FileNotFoundError("no config.json in this directory")
+        except FileNotFoundError:
+            print("no config.json in this directory")
 
     def ingest(self):
         path = p.join(self.loc, self.options["src"])
@@ -33,7 +33,7 @@ class Interpreter:
 
     def structure(self):
         print("generating JSON")
-        self.DOM = cvd(self.rawHtml.find(id=self.options["tophtmlid"]))
+        self.DOM = cvd(self.rawHtml.find(id=self.options["toplevelid"]))
         self.JSON = json.dumps(self.DOM)
 
     def write(self):
