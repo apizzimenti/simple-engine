@@ -2,6 +2,10 @@
 
 `simple-engine` reads in an html file and generates a JSON map corresponding to the html.
 
+## installation
+
+`$ pip install simple-engine-core`
+
 ## usage
 
 put a `config.json` file in a place that makes it convenient to type the source and destination paths out (a root
@@ -17,7 +21,7 @@ ex. `config.json`
 
 then run `engine` from the command line.
 
-### options
+## options
 
 | option | description | default |
 | :----: | :---------: | :----: |
