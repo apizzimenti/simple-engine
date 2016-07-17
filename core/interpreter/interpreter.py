@@ -3,7 +3,8 @@
 from bs4 import BeautifulSoup as bs
 import os, os.path as p
 import json
-from core.tools import cvd, wtf
+from core.tools import wtf
+from core.interpreter import cvd
 
 
 class Interpreter:
@@ -22,10 +23,10 @@ class Interpreter:
         print("loading config")
 
         try:
-            with open(p.join(self.loc, "config.json"), "r") as f:
+            with open(p.join(self.loc, "engine.json"), "r") as f:
                 self.options = json.loads(f.read())
         except FileNotFoundError:
-            print("no config.json in this directory")
+            print("no engine.json in this directory")
 
     def ingest(self):
         path = p.join(self.loc, self.options["src"])
