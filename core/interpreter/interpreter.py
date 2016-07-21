@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup as bs
 import os, os.path as p
 import json
 from core.tools import wtf
-from core.interpreter import cvd
+from core.tools import cvd
 
 
 class Interpreter:

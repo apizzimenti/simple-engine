@@ -1,5 +1,6 @@
 {
   "src": "app/index.html",
   "dest": "dank.js",
-  "toplevelid": "start"
+  "toplevelid": "start",
+  "cwd": ""
 }
