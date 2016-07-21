@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from distutils.core import setup
+from setuptools import setup
 
 setup(
     name="simple-engine-core",
@@ -8,7 +8,7 @@ setup(
     long_description=open("README.md").read(),
 
     license="MIT",
-    version=0.4,
+    version=0.6,
 
     url="https://github.com/apizzimenti/simple-engine-core.git",
     author="Anthony Pizzimenti",
