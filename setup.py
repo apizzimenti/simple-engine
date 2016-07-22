@@ -8,7 +8,7 @@ setup(
     long_description=open("README.md").read(),
 
     license="MIT",
-    version=0.8,
+    version=0.9,
 
     url="https://github.com/apizzimenti/simple-engine-core.git",
     author="Anthony Pizzimenti",
