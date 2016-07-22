@@ -1,5 +1,7 @@
 # simple-engine
 
+**For updated documentation, visit [the simple-engine wiki.](https://github.com/apizzimenti/simple-engine-ui/wiki)
+
 `simple-engine` reads in an html file and generates a JSON map corresponding to the html.
 
 ## installation
@@ -21,11 +23,4 @@ ex. `engine.json`
 
 then run `engine` from the command line.
 
-## options
-
-| option | description | default |
-| :----: | :---------: | :----: |
-| `src` | source html file | `./index.html` |
-| `dest` | destination file | `./simpleDom.js` |
-| `toplevelid` | html id where the interpreter starts | `start` |
 
