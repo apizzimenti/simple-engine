@@ -8,13 +8,13 @@ setup(
     long_description=open("README.md").read(),
 
     license="MIT",
-    version=0.9,
+    version=2.3,
 
     url="https://github.com/apizzimenti/simple-engine-core.git",
     author="Anthony Pizzimenti",
     author_email="pizzimentianthony@gmail.com",
 
-    packages=["core"],
+    packages=["core", "core.interpreter", "core.tools"],
 
     entry_points={
         "console_scripts": ["engine=core.index:main"],
