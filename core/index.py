@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 
-from core import interpreter
+from . import Interpreter
+import sys, os
 
 
 def main():
-    i = interpreter()
+    i = Interpreter()
     i.config()
     i.ingest()
     i.structure()

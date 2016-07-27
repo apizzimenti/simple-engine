@@ -3,8 +3,8 @@
 from bs4 import BeautifulSoup as bs
 import os, os.path as p
 import json
-from core.tools import wtf
-from core.tools import cvd
+from ..tools import wtf
+from ..tools import cvd
 
 
 class Interpreter:
@@ -47,7 +47,8 @@ class Interpreter:
             self.DOM = cvd(self.rawHtml.find(id="start"))
         else:
             self.DOM = cvd(self.rawHtml.find(id=self.options["toplevelid"]))
-            self.JSON = json.dumps(self.DOM)
+
+        self.JSON = json.dumps(self.DOM)
 
     def write(self):
 
