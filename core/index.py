@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from . import Interpreter
+from core.interpreter import Interpreter
 import sys, os
 
 
@@ -10,3 +10,7 @@ def main():
     i.ingest()
     i.structure()
     i.write()
+
+if __name__ == "__main__":
+    main()
+
