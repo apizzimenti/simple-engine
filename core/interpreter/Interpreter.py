@@ -3,8 +3,7 @@
 from bs4 import BeautifulSoup as bs
 import os, os.path as p
 import json
-from ..tools import wtf
-from ..tools import cvd
+from core.tools import cvd, wtf
 
 
 class Interpreter:
